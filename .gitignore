@@ -1,0 +1,9 @@
+#this file must be managed
+#command "git check-ignore -v filename" can chek ingored file list
+
+#Qt
+MakeFile
+MakeFile.*
+*.pro.user
+debug/
+release/
