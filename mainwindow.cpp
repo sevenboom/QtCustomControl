@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "MessageBox.h"
+#include "ComboBox/combobox.h"
 
 #include <QHBoxLayout>
 #include <QLabel>
@@ -13,11 +14,15 @@ MainWidget::MainWidget(QWidget *parent)
 
     m_statusBar = new QLabel;
 
+    ComboBox *comboBox = new ComboBox();
+    comboBox->setMaximumSize(100,40);
+
     QHBoxLayout *dailogLayout = new QHBoxLayout();
     dailogLayout->addWidget(msgDialog,0,Qt::AlignLeft);
 
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->addLayout(dailogLayout);
+    layout->addWidget(comboBox, 0, Qt::AlignLeft);
     layout->addWidget(m_statusBar, 0, Qt::AlignBottom);
 
     connect(msgDialog, &QPushButton::clicked, this, &MainWidget::showMsgBox);

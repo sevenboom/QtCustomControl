@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/ComboBox">
+        <file>controlsource/dropArrow.png</file>
+        <file>controlsource/dropArrow1.png</file>
+        <file>controlsource/clssdropdown.png</file>
+    </qresource>
+</RCC>

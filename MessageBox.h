@@ -7,7 +7,6 @@ class MessageBox : public QDialog
 {
     Q_OBJECT
 public:
-//    explicit MessageBox(QWidget *parent = 0);
     explicit MessageBox(const QString &title, const QString &text, QWidget *parent = 0);
 
 };

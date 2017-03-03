@@ -16,9 +16,17 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     MessageBox.cpp \
     indicator.cpp \
-    combobox.cpp
+	ComboBox/combobox.cpp \
+    ComboBox/popuplistview.cpp
 
 HEADERS  += mainwindow.h \
     MessageBox.h \
     indicator.h \
-    combobox.h
+	ComboBox/combobox.h \
+    ComboBox/popuplistview.h
+
+DEFINES += $$PWD\
+		+= $$PWD/ComboBox
+
+RESOURCES += \
+    controlsource.qrc
